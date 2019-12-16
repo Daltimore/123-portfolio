@@ -1,0 +1,141 @@
+body {
+  background-image: url('../img/wallpaperflare 1.png');
+  background-repeat: no-repeat;
+  margin: 25px;
+  z-index: 1;
+}
+
+
+#home {
+  background: #ffffff;
+  padding: 2rem;
+}
+
+#home .page-header {
+  display: flex;
+}
+
+#home .small-orange-cirle {
+  background: #FC622E;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+}
+
+#home .image-container {
+  border: 1px solid #FC592E;
+  border-radius: 50%;
+  padding: 17px;
+  margin-left: 1rem;
+}
+
+#home .image-container img {
+  width: 8rem;
+}
+
+#home .user-details{
+  padding: 1rem;
+  line-height: 16px;
+}
+
+#home .user-details p{
+  font-size: 0.9rem;
+}
+
+.tap{
+  background: linear-gradient(120.51deg, #FD9137 1.69%, #FBBE4B 41.59%, #79B1FB 70.47%, #55D3FC 100.63%);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#home .user-details .user-social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+#home .user-rates {
+  padding-top: 19px;
+}
+
+#home .user-rates img{
+  width: 295px;
+  object-fit: contain;
+  margin-top: -12px;
+}
+
+#home .user-rates__all {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+#home .about-user {
+  padding: 60px 120px;
+}
+
+#home .about-user .about-user__tabs h5 {
+  font-size: 2.3rem;
+  color: #222222;
+}
+
+#home .about-user .about-user__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home .about-user .about-user__tabs a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#home .tab-content__one {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  font-size: 23px;
+}
+
+#home .tab-content__one h5{
+  font-size: 23px;
+  font-weight: 100;
+}
+
+#home .work-details {
+  padding: 130px 0px;
+}
+
+#home .work-details .black-circle {
+  width: 11px;
+  height: 11px;
+  background: #222222;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#home .work-details .work-details__head {
+  display: flex;
+}
+
+#home .work-details .work-details__head2 {
+  padding-top: 1rem;
+}
+
+#home .work-details .work-details__head h4 {
+  margin-top: -7px;
+}
+
+#home .work-details .work-details__more {
+  width: 70%;
+  padding-bottom: 1.5rem;
+}
+
+/* .active {
+  color: #FD8636;
+} */
