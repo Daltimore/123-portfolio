@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-12 user-rates">
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between interviews">
           <h4>Your Interviews :</h4>
           <img src="@/assets/img/image 2.png" alt="">
         </div>

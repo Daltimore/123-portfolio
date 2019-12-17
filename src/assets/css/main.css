@@ -1,8 +1,17 @@
+@font-face {
+  font-family: 'Nexa-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Nexa\ Light.otf')
+}
+
+
 body {
   background-image: url('../img/wallpaperflare 1.png');
   background-repeat: no-repeat;
   background-size: 100vw;
   margin: 25px;
+  font-family: 'Nexa-Light';
 }
 
 #home {
@@ -63,9 +72,13 @@ body {
 }
 
 #home .user-rates img{
-  width: 295px;
+  width: 229px;
   object-fit: contain;
-  margin-top: -12px;
+  margin-top: -5px;
+}
+
+#home .user-rates .interviews {
+  width: 76%;
 }
 
 #home .user-rates__all {
