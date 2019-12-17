@@ -1,7 +1,7 @@
 <template>
   <main id="home">
     <section class="page-header">
-      <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
+      <div class="col-lg-6 col-md-12 col-sm-24 d-flex">
         <div class="small-orange-cirle"></div>
         <div class="image-container">
           <img src="@/assets/img/Mask Group.png" alt="">
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 col-sm-12 user-rates">
+      <div class="col-lg-6 col-md-12 col-sm-24 user-rates">
         <div class="d-flex justify-content-between interviews">
           <h4>Your Interviews :</h4>
           <img src="@/assets/img/image 2.png" alt="">
@@ -96,10 +96,10 @@
           </div>
           <div class="d-flex">
             <div class="col-lg-6 col-md-12 col-sm-12">
-              <img src="@/assets/img/Mask Group.svg" alt="">
+              <img src="@/assets/img/Mask Group.svg" alt="" class="w-100">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mask">
-              <img src="@/assets/img/Mask Groupp.png" alt="">
+              <img src="@/assets/img/Mask Groupp.png" alt="" class="w-100">
             </div>
           </div>
         </div>
