@@ -25,18 +25,18 @@ body {
 }
 
 #home .image-container {
-  border: 1px solid #FC592E;
-  border-radius: 50%;
-  padding: 17px;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  background-image: url('../img/png\ for\ dev\ 2.png');
+  background-repeat: no-repeat;
+  width: 30%;
 }
 
 #home .image-container img {
-  width: 8rem;
+  width: 7rem;
+  margin: 10px;
 }
 
 #home .user-details{
-  padding: 1rem;
   line-height: 16px;
 }
 
@@ -136,6 +136,10 @@ body {
   padding-bottom: 1.5rem;
 }
 
-/* .active {
-  color: #FD8636;
-} */
+#home .about-user a .active{
+  background-image: url('../img/png\ for\ dev\ 2.png');
+  background-repeat: no-repeat;
+  color: #FC622E;
+  background-size: 62px;
+  height: 67px;
+}
