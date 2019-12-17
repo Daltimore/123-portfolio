@@ -95,8 +95,12 @@
             <h5>Software</h5>
           </div>
           <div class="d-flex">
-            <img src="@/assets/img/Mask Group.svg" alt="">
-            <img src="@/assets/img/Mask Groupp.png" alt="">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="@/assets/img/Mask Group.svg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mask">
+              <img src="@/assets/img/Mask Groupp.png" alt="">
+            </div>
           </div>
         </div>
 

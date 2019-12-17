@@ -1,10 +1,9 @@
 body {
   background-image: url('../img/wallpaperflare 1.png');
   background-repeat: no-repeat;
+  background-size: 100vw;
   margin: 25px;
-  z-index: 1;
 }
-
 
 #home {
   background: #ffffff;
@@ -142,4 +141,11 @@ body {
   color: #FC622E;
   background-size: 62px;
   height: 67px;
+}
+
+#home .mask {
+  background-image: url('../img/png\ for\ dev.png');
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 999999;
 }
