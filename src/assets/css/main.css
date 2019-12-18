@@ -67,6 +67,14 @@ body {
   font-size: 0.9rem;
 }
 
+#home .tools__mobile {
+  display: none;
+}
+
+#home .tab__mobile {
+  display: none;
+}
+
 .tap{
   background: linear-gradient(120.51deg, #FD9137 1.69%, #FBBE4B 41.59%, #79B1FB 70.47%, #55D3FC 100.63%);
   border-radius: 8px;
@@ -282,15 +290,22 @@ body {
 
   #home .caurosel__mobile {
     display: block;
+    padding: 56px 10px;
+    text-align: center;
   }
-  #home .carousel{
-    margin-top: 50px;
+
+  #home .tools__mobile {
+    display: flex;
+    justify-content: center;
   }
-  #home .carousel-inner{
-    height: 80px;
+
+  #home .tools__mobile img {
+    width: 90%;
   }
-  #home .carousel-caption{
-    color: #222222;
-    top: 50%;
+
+  #home .tab__mobile {
+    display: block;
+    padding: 50px 0px;
+    text-align: center;
   }
 }

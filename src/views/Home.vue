@@ -66,37 +66,154 @@
     </section>
 
     <section class="caurosel__mobile">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <h3>Programing Language</h3>
-            </div>
+      <swiper :options="swiperOption">
+        <swiper-slide>Programing Language</swiper-slide>
+        <swiper-slide>Frameworks / Databases</swiper-slide>
+        <swiper-slide>Frameworks / Databases</swiper-slide>
+        <swiper-slide>Software</swiper-slide>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
+    </section>
+
+    <section class="tools__mobile">
+      <img src="@/assets/img/image 6.png" alt="">
+    </section>
+
+    <section class="tab__mobile">
+      <swiper :options="swiperOption">
+        <swiper-slide>
+          <div>
+            <a 
+              id="first-tab"
+              :class="{ active: isActive('portfolio') }"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="first"
+              aria-selected="true"
+              @click.prevent="setActive('portfolio')">
+              
+              <h5 :class="{ active: isActive('portfolio') }">Portfolio</h5>
+            </a>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>Frameworks / Databases</h3>
-            </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div>
+            <a 
+              id="second-tab"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="second"
+              aria-selected="true"
+              @click.prevent="setActive('work')">
+
+              <h5 :class="{ active: isActive('work') }">Work</h5>
+            </a>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>Design Skills</h3>
-            </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div>
+            <a 
+              id="third-tab"
+              data-toggle="tab"
+              role="tab"
+              aria-controls="third"
+              aria-selected="true"
+              @click.prevent="setActive('education')">
+
+              <h5 :class="{ active: isActive('education') }">Education</h5>
+            </a>
           </div>
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <h3>Software</h3>
+        </swiper-slide>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
+
+       <div id="myTabContent" class="tab-content">
+        <div
+          id="portfolio"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="first-tab"
+          :class="{ 'active show': isActive('portfolio') }">
+          <div class="tab-content__one">
+            <h5>Programing Language</h5>
+            <h5>Frameworks / Databases</h5>
+            <h5>Design Skills</h5>
+            <h5>Software</h5>
+          </div>
+          <div class="d-flex img-section">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <img src="@/assets/img/Mask Group.svg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mask">
+              <img src="@/assets/img/Mask Groupp.png" alt="">
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev text-dark" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only text-dark">Previous</span>
-        </a>
-        <a class="carousel-control-next text-dark" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only text-dark">Next</span>
-        </a>
+
+        <div
+          id="work"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="second-tab"
+          :class="{ 'active show': isActive('work') }">
+
+          <div class="tab-content__one">
+            <h5>Programing Language</h5>
+            <h5>Frameworks / Databases</h5>
+            <h5>Design Skills</h5>
+            <h5>Software</h5>
+          </div>
+
+          <div class="work-details">
+            <div class="work-details__head">
+              <div class="black-circle"></div>
+              <h4>Senior UI&amp;UX Designer</h4>
+            </div>
+            <p class="pl-4">May 2018 - Jul 2018</p>
+            <p class="pl-4 work-details__more">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+            <div class="work-details__head">
+              <div class="black-circle"></div>
+              <h4>Graphic designer</h4>
+            </div>
+            <p class="pl-4">May 2018 - Jul 2018</p>
+            <p class="pl-4 work-details__more">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+
+          </div>
+        </div>
+
+        <div
+          id="education"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="third-tab"
+          :class="{ 'active show': isActive('education') }">
+
+          <div class="tab-content__one">
+            <h5>Programing Language</h5>
+            <h5>Frameworks / Databases</h5>
+            <h5>Design Skills</h5>
+            <h5>Software</h5>
+          </div>
+          <div class="work-details">
+            <div class="work-details__head">
+              <div class="black-circle"></div>
+              <h4>Oxford university</h4>
+            </div>
+            <p class="pl-4">May 2018 - Jul 2018</p>
+            <p class="pl-4 work-details__more">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+
+            <div class="work-details__head">
+              <div class="black-circle"></div>
+              <h4>Udemy</h4>
+            </div>
+            <p class="pl-4">May 2018 - Jul 2018</p>
+            <p class="pl-4 work-details__more">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
+
+          </div>
+        </div>
       </div>
     </section>
 
@@ -237,6 +354,13 @@ export default {
   data() {
     return {
       activeItem: 'portfolio',
+       swiperOption: {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
     }
   },
   methods: {
