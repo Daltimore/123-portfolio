@@ -1,10 +1,11 @@
 <template>
   <main id="home">
     <section class="page-header">
-      <div class="col-lg-6 col-md-12 col-sm-24 d-flex">
+      <div class="col-lg-6 col-md-12 col-sm-24 main-section">
         <div class="small-orange-cirle"></div>
         <div class="image-container">
           <img src="@/assets/img/Mask Group.png" alt="">
+          <img src="@/assets/img/image 4.png" alt="" class="text-icon">
         </div>
         <div class="user-details">
           <h2 class="font-weight-bold">Sarah Abra</h2>
@@ -18,6 +19,30 @@
             <i class="fab fa-facebook-f"></i>
           </div>
         </div>
+        <div class="user-details-mobile">
+          <h2 class="font-weight-bold">Sarah Abra</h2>
+          <p>Ui&amp;UX Designer</p>
+          <div class="d-flex justify-content-between rates-mobile">
+            <div>
+            <h5>10$</h5>
+            <span>Hourly rate</span>
+          </div>
+          <div class="pl-1 second__rate">
+            <h5>35 hours</h5>
+            <span>Weekly Availability</span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-social-icons__mobile">
+        <i class="fab fa-behance"></i>
+        <i class="fab fa-dribbble"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="hire-me__mobile">
+        <button class="btn btn-sm tap">Hire me</button>
       </div>
       <div class="col-lg-6 col-md-12 col-sm-24 user-rates">
         <div class="d-flex justify-content-between interviews">
@@ -37,6 +62,41 @@
             <button class="btn btn-sm tap">Hire me</button>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="caurosel__mobile">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <h3>Programing Language</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>Frameworks / Databases</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>Design Skills</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <h3>Software</h3>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev text-dark" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only text-dark">Previous</span>
+        </a>
+        <a class="carousel-control-next text-dark" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only text-dark">Next</span>
+        </a>
       </div>
     </section>
 
@@ -94,12 +154,12 @@
             <h5>Design Skills</h5>
             <h5>Software</h5>
           </div>
-          <div class="d-flex">
+          <div class="d-flex img-section">
             <div class="col-lg-6 col-md-12 col-sm-12">
-              <img src="@/assets/img/Mask Group.svg" alt="" class="w-100">
+              <img src="@/assets/img/Mask Group.svg" alt="">
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mask">
-              <img src="@/assets/img/Mask Groupp.png" alt="" class="w-100">
+              <img src="@/assets/img/Mask Groupp.png" alt="">
             </div>
           </div>
         </div>

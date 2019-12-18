@@ -10,6 +10,7 @@ body {
   background-image: url('../img/wallpaperflare 1.png');
   background-repeat: no-repeat;
   background-size: 100vw;
+  background-clip: border-box;
   margin: 25px;
   font-family: 'Nexa-Light';
   height: 100vh;
@@ -22,6 +23,10 @@ body {
 }
 
 #home .page-header {
+  display: flex;
+}
+
+#home .page-header .main-section {
   display: flex;
 }
 
@@ -46,6 +51,14 @@ body {
   margin: 10px;
 }
 
+#home .image-container .text-icon{
+  display: none;
+}
+
+#home .caurosel__mobile {
+  display: none;
+}
+
 #home .user-details{
   line-height: 16px;
 }
@@ -61,6 +74,14 @@ body {
   font-weight: 700;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border: none;
+}
+
+#home .user-social-icons__mobile {
+  display: none;
+}
+
+#home .user-details-mobile {
+  display: none;
 }
 
 #home .user-details .user-social-icons {
@@ -93,6 +114,10 @@ body {
 
 #home .about-user {
   padding: 60px 120px;
+}
+
+#home .hire-me__mobile {
+  display: none;
 }
 
 #home .about-user .about-user__tabs h5 {
@@ -170,10 +195,102 @@ body {
   #home {
     display: flex;
     flex-direction: column;
+    padding: 10px 0px;
   }
 
   #home .page-header {
     display: flex;
     flex-direction: column;
+  }
+
+  #home .page-header .main-section {
+    display: flex;
+  }
+
+  #home .img-section {
+    display: none !important;
+  }
+
+  #home .user-social-icons-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-left: -1rem;
+  }
+
+  #home .user-details .user-social-icons {
+    display: none;
+  }
+
+  #home .user-details{
+    display: none;
+  }
+
+  #home .user-details-mobile {
+    display: block;
+    padding-top: 1rem;
+  }
+
+  #home .user-details-mobile h2 {
+    font-size: 1.4rem;
+  }
+
+  #home .user-details-mobile h5 {
+    font-size: 1rem;
+  }
+
+  #home .user-details-mobile .second__rate {
+    padding-left: 20px !important;
+  }
+
+  #home .about-user {
+    display: none !important;
+  }
+
+  #home .image-container {
+    width: 36%
+  }
+
+  #home .user-rates {
+    display: none;
+  }
+
+  #home .user-social-icons__mobile {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+
+  #home .image-container .text-icon {
+    display: block;
+    width: 2rem;
+    position: absolute;
+    top: 56%;
+    right: 0;
+    left: 27%;
+  }
+
+  #home .hire-me__mobile {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  #home .hire-me__mobile button {
+    width: 28%;
+  }
+
+  #home .caurosel__mobile {
+    display: block;
+  }
+  #home .carousel{
+    margin-top: 50px;
+  }
+  #home .carousel-inner{
+    height: 80px;
+  }
+  #home .carousel-caption{
+    color: #222222;
+    top: 50%;
   }
 }
