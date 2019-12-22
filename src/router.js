@@ -10,6 +10,11 @@ export const router = new Router({
       path: '/',
       name: 'home',
       component: () => import('@/views/Home.vue')
+    },
+    {
+      path: '/skills',
+      name: 'skills',
+      component: () => import('@/views/Skills.vue')
     }
   ]
 })

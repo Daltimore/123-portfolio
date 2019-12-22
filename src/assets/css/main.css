@@ -192,6 +192,25 @@ body {
   height: 67px;
 }
 
+#home .tab__mobile a .active{
+  background-image: url('../img/png\ for\ dev\ 2.png');
+  background-repeat: no-repeat;
+  color: #FC622E;
+  background-size: 62px;
+  height: 67px;
+}
+
+#home .skills-section {
+  padding-top: 4rem;
+}
+
+#home .skills-section .one-skill {
+  border: 3px solid #222222;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.7rem;
+}
+
 #home .mask {
   background-image: url('../img/png\ for\ dev.png');
   background-repeat: no-repeat;
