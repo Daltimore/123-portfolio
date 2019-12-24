@@ -219,6 +219,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  body {
+    background-repeat: repeat-y;
+  }
   #home {
     display: flex;
     flex-direction: column;
@@ -235,7 +238,16 @@ body {
   }
 
   #home .img-section {
-    display: none !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home .img-section .mask {
+    background: none;
+  }
+
+  #home .img-section img {
+    width: 15rem;
   }
 
   #home .user-social-icons-mobile {
@@ -325,6 +337,126 @@ body {
   #home .tab__mobile {
     display: block;
     padding: 50px 0px;
-    text-align: center;
+  }
+
+  #home .tab__mobile h5 {
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 0.8rem;
+  }
+
+  #home .tab-content__one {
+    display: none;
+  }
+
+  #home .tab__mobile a .active {
+    font-size: 3rem;
+    padding-top: 0.7rem;
+    background: none;
+  }
+
+  #home .work-details {
+    padding: 50px 100px;
+}
+
+  #home .work-details .work-details__more {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  #home .user-details-mobile {
+    display: block;
+    padding: 1rem;
+  }
+
+  #home .about-user {
+    display: none;
+  }
+
+  #home .image-container {
+    margin-left: 0.7rem;
+    background-size: 96px;
+  }
+
+  #home .image-container img {
+    width: 5rem;
+    margin: 10px;
+  }
+
+  #home .image-container .text-icon {
+    top: 27%;
+  }
+
+  #home .tab__mobile a .active {
+    font-size: 1.7rem;
+    padding-top: 1.3rem;
+    background: none;
+  }
+
+  #home .work-details {
+    padding: 50px 46px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #home .image-container .text-icon {
+    display: none;
+  }
+
+  #home .about-user {
+    display: none;
+  }
+
+  #home .tab__mobile a .active {
+    font-size: 2rem;
+    padding-top: 1.3rem;
+    background: none;
+  }
+
+  #home .work-details {
+    padding: 50px 46px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  #home .image-container .text-icon {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #home .user-details {
+    padding-left: 1.5rem;
+  }
+}
+
+@media all and (max-width: 442px) {
+  #home .user-details {
+    padding-left: 1.5rem;
+  }
+
+  #home .image-container img {
+    width: 5rem;
+    margin: 10px;
+  }
+
+  #home .image-container {
+    margin-left: 0.7rem;
+    background-size: 96px;
+  }
+
+  #home .tab__mobile a .active {
+    font-size: 2rem;
+    padding-top: 1.3rem;
+    background: none;
+  }
+
+  #home .work-details {
+    padding: 50px 46px;
+  }
+
+  #home .about-user {
+    display: none;
   }
 }

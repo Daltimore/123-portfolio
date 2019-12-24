@@ -86,14 +86,14 @@
           <div>
             <a 
               id="first-tab"
-              :class="{ active: isActive('portfolio') }"
+              :class="{ active: isActive('portfolion') }"
               data-toggle="tab"
               role="tab"
               aria-controls="first"
               aria-selected="true"
-              @click.prevent="setActive('portfolio')">
+              @click.prevent="setActive('portfolion', 1)">
               
-              <h5 :class="{ active: isActive('portfolio') }">Portfolio</h5>
+              <h5 :class="{ active: isActive('portfolion') }">Portfolio</h5>
             </a>
           </div>
         </swiper-slide>
@@ -105,9 +105,10 @@
               role="tab"
               aria-controls="second"
               aria-selected="true"
-              @click.prevent="setActive('work')">
+              :class="{ active: isActive('workk') }"
+              @click.prevent="setActive('workk', 2)">
 
-              <h5 :class="{ active: isActive('work') }">Work</h5>
+              <h5 :class="{ active: isActive('workk') }">Work</h5>
             </a>
           </div>
         </swiper-slide>
@@ -119,9 +120,10 @@
               role="tab"
               aria-controls="third"
               aria-selected="true"
-              @click.prevent="setActive('education')">
+              :class="{ active: isActive('educationn') }"
+              @click.prevent="setActive('educationn', 3)">
 
-              <h5 :class="{ active: isActive('education') }">Education</h5>
+              <h5 :class="{ active: isActive('educationn') }">Education</h5>
             </a>
           </div>
         </swiper-slide>
@@ -135,7 +137,7 @@
           class="tab-pane"
           role="tabpanel"
           aria-labelledby="first-tab"
-          :class="{ 'active show': isActive('portfolio') }">
+          :class="{ 'active show': isActive('portfolion') }">
           <div class="tab-content__one">
             <h5>Programing Language</h5>
             <h5>Frameworks / Databases</h5>
@@ -157,7 +159,7 @@
           class="tab-pane"
           role="tabpanel"
           aria-labelledby="second-tab"
-          :class="{ 'active show': isActive('work') }">
+          :class="{ 'active show': isActive('workk') }">
 
           <div class="tab-content__one">
             <h5>Programing Language</h5>
@@ -189,7 +191,7 @@
           class="tab-pane"
           role="tabpanel"
           aria-labelledby="third-tab"
-          :class="{ 'active show': isActive('education') }">
+          :class="{ 'active show': isActive('educationn') }">
 
           <div class="tab-content__one">
             <h5>Programing Language</h5>
@@ -356,21 +358,37 @@ export default {
       activeItem: 'portfolio',
        swiperOption: {
         loop: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
         }
-      }
+      },
+      currentLink: null
     }
   },
   methods: {
     isActive (menuItem) {
       return this.activeItem === menuItem;
     },
-    setActive (menuItem) {
+    setActive (menuItem, y) {
       this.activeItem = menuItem;
+      this.currentLink = y
     },
-  }
+  },
+  mounted () {
+    const currentArray = [ 'portfolion', 'workk', 'educationn' ]
+    let current = 0
+    setInterval(() => {
+      if (this.currentLink != null) {
+        current = this.currentLink
+      }
+      this.setActive(currentArray[current])
+      current += 1
+      if (current === currentArray.length) { current = 0 }
+    }, 5000)
+  },
   
 }
 </script>
