@@ -398,6 +398,12 @@ body {
   #home .work-details {
     padding: 50px 46px;
   }
+  
+  #home .img-section {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0rem 3.2rem;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -417,6 +423,12 @@ body {
 
   #home .work-details {
     padding: 50px 46px;
+  }
+
+  #home .img-section {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0rem 3.2rem;
   }
 }
 
@@ -459,5 +471,11 @@ body {
 
   #home .about-user {
     display: none;
+  }
+
+  #home .img-section {
+    display: flex !important;
+    flex-direction: column;
+    padding: 0rem 3.2rem;
   }
 }
