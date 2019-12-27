@@ -77,7 +77,20 @@
     </section>
 
     <section class="tools__mobile">
-      <img src="@/assets/img/image 6.png" alt="">
+      <div class="d-flex justify-content-between skills-section">
+            <div class="one-skill">
+              <h2>Ai</h2>
+            </div>
+            <div class="one-skill">
+              <h2>Ae</h2>
+            </div>
+            <div class="one-skill">
+              <h2>Xd</h2>
+            </div>
+            <div class="one-skill">
+              <h2>Pr</h2>
+            </div>
+          </div>
     </section>
 
     <section class="tab__mobile">

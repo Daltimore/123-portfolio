@@ -363,6 +363,10 @@ body {
   #home .work-details .work-details__more {
     width: 100%;
   }
+
+  #home .skills-section .one-skill {
+    margin: 0rem 4rem;
+  }
 }
 
 @media all and (max-width: 375px) {
@@ -404,6 +408,11 @@ body {
     flex-direction: column;
     padding: 0rem 3.2rem;
   }
+
+  #home .skills-section .one-skill {
+    margin: 0rem 2rem;
+  }
+  
 }
 
 @media all and (max-width: 768px) {
@@ -429,6 +438,14 @@ body {
     display: flex !important;
     flex-direction: column;
     padding: 0rem 3.2rem;
+  }
+
+  #home .skills-section {
+    display: flex;
+  }
+
+  #home .skills-section .one-skill {
+    margin: 0rem 2rem;
   }
 }
 
@@ -477,5 +494,15 @@ body {
     display: flex !important;
     flex-direction: column;
     padding: 0rem 3.2rem;
+  }
+
+  #home .skills-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  #home .skills-section .one-skill {
+    margin: 2rem 0rem;
   }
 }
