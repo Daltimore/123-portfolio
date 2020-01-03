@@ -329,6 +329,7 @@ body {
   #home .tools__mobile {
     display: flex;
     justify-content: center;
+    margin-top: -3rem;
   }
 
   #home .tools__mobile img {
@@ -497,12 +498,11 @@ body {
   }
 
   #home .skills-section {
-    display: flex;
-    flex-direction: column;
-    padding: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   #home .skills-section .one-skill {
-    margin: 2rem 0rem;
+    margin: 2rem 2rem;
   }
 }
