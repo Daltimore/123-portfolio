@@ -77,20 +77,7 @@
     </section>
 
     <section class="tools__mobile">
-      <div class="d-flex justify-content-between skills-section">
-            <div class="one-skill">
-              <h2>Ai</h2>
-            </div>
-            <div class="one-skill">
-              <h2>Ae</h2>
-            </div>
-            <div class="one-skill">
-              <h2>Xd</h2>
-            </div>
-            <div class="one-skill">
-              <h2>Pr</h2>
-            </div>
-          </div>
+      <skill-slide></skill-slide>
     </section>
 
     <section class="tab__mobile">
@@ -376,8 +363,13 @@
 </template>
 
 <script>
+import SkillSlide from '@/components/SkillSlide.vue'
+
 export default {
   name: 'home',
+  components: {
+    SkillSlide
+  },
   data() {
     return {
       activeItem: 'portfolio',
